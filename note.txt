@@ -1,0 +1,38 @@
+note
+
+app		: configuration de l'app
+db		: les scripts SQL
+src	M	: les fichiers source PHP
+views V	: les vue
+web	C	: les fichiers accessibles aux clients web
+
+
+
+
+configuration Serveur virtual host
+
+C:\Windows\System32\drivers\etc
+127.0.0.1	microcms
+
+
+C:\Users\SHAO\WEB\xampp\apache\conf\extra\httpd-vhosts.conf
+#
+#	configuration pour exo silex MicroCMS
+#
+<VirtualHost *:80>
+    DocumentRoot "C:\Users\SHAO\WEB\xampp\htdocs"
+    ServerName localhost
+</VirtualHost>
+
+#<VirtualHost *:80>
+#    DocumentRoot "C:\Users\SHAO\WEB\xampp\htdocs\microcms\web"
+#    ServerName microcms
+#    <Directory "C:\Users\SHAO\WEB\xampp\htdocs\microcms\web">
+#        AllowOverride All
+#    </Directory>
+#</VirtualHost>
+
+<VirtualHost *:80>
+	DocumentRoot "C:\Users\SHAO\WEB\xampp\htdocs\microcms\web"
+	ServerName microcms
+</VirtualHost>
